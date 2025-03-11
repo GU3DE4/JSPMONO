@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import Restaurants from "./restaurants/page";
+import Establishments from "./establishments/page";
 
 export default function Home() {
   return (
@@ -16,12 +16,12 @@ export default function Home() {
             <li>Menu Item 2</li>
             <li>Menu Item 3</li>
             <li>
-              <Link href="/restaurants">Restaurants</Link>
+              <Link href="/establishments">Establishments</Link>
             </li>
           </ul>
         </nav>
         <main className={styles.main}>
-          <Restaurants />
+          <Establishments />
         </main>
       </div>
     </div>
