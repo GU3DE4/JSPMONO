@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
-
+//hola borrame
 export async function getEstablishments() {
   const establishments = await prisma.establishment.findMany();
   return establishments;
