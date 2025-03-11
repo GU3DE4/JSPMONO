@@ -11,10 +11,21 @@ generator client {
 }
 
 model Establishment {
-  id      String  @id @default(auto()) @map("_id") @db.ObjectId
-  name    String
-  address String
-  phone   String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id         String      @id @default(auto()) @map("_id") @db.ObjectId
+  name       String
+  address    String
+  phone      String
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+  promotions Promotion[]
+}
+
+model Promotion {
+  id              String        @id @default(auto()) @map("_id") @db.ObjectId 
+  establishment   Establishment @relation(fields: [establishmentId], references: [id])
+  establishmentId String        @db.ObjectId
+  name            String
+  description     String
+  startDate       DateTime
+  endDate         DateTime
 } 

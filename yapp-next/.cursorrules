@@ -84,6 +84,16 @@ always use windows terminal commands
 
 ### Async Request APIs
 
+###COMMON ERRORS
+You're importing a component that needs `useState`. This React hook only works in a client component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+Never use the useState hook in a server side component, only on client side components.
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+neve export metadata from a server side component
+
+EVERY SERVICE IS A SERVER SIDE COMPONENT 
+
 ```typescript
 // Always use async versions of runtime APIs
 const cookieStore = await cookies()
