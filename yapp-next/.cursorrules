@@ -67,6 +67,21 @@ Before responding to any request, follow these steps:
 - Implement URL state management with 'nuqs'
 - Minimize client-side state
 
+always add new dependencies to package.json
+always run npm install after adding new dependencies
+
+#DATABASE
+always use prisma to interact with the database
+always use prisma on the server side only 
+WE ONLY USE MONGODB USING ATLAS VIA PRISMA
+EVERY PRISMA ACTION MUST BE SERVER SIDE 
+EVERY PRISMA ACTION MUST BE SERVER SIDE 
+EVERY PRISMA ACTION MUST BE SERVER SIDE 
+EVERY PRISMA ACTION MUST BE SERVER SIDE 
+
+#TERMINAL COMMANDS
+always use windows terminal commands
+
 ### Async Request APIs
 
 ```typescript
