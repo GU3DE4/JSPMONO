@@ -1,0 +1,48 @@
+.sideMenu {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  position: fixed;
+  top: 60px; /* Adjust this value based on the height of your topbar */
+  left: -200px;
+  height: calc(100vh - 60px); /* Adjust this value based on the height of your topbar */
+  transition: left 0.3s ease;
+  z-index: 100;
+  margin-top: 10px; /* Add a margin to prevent overlapping with the topbar */
+}
+
+.sideMenu.open {
+  left: 0;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.closeIcon {
+  font-size: 24px;
+}
+
+.sideMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sideMenu li {
+  margin-bottom: 10px;
+}
+
+.sideMenu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.sideMenu a:hover {
+  color: #007bff;
+} 
