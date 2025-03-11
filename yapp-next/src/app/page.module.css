@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.logo {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sideMenu {
+  background-color: #f0f0f0;
+  width: 200px;
+  padding: 1rem;
+}
+
+.sideMenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sideMenu li {
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.main {
+  flex: 1;
+  padding: 1rem;
+}
